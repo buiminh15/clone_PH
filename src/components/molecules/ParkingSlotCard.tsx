@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Text } from "../atoms/Text";
 import { TextWithLeftIcon } from "../atoms/TextWithLeftIcon";
+import { BeakerIcon } from "@heroicons/react/24/solid";
 
 export const ParkingSlotCard = () => {
   return (
@@ -24,7 +25,10 @@ export const ParkingSlotCard = () => {
               <Text>Lorem, ipsum dolor.</Text>
             </div>
             <div className="flex items-center justify-between">
-              <TextWithLeftIcon />
+              <TextWithLeftIcon
+                icon={<BeakerIcon className="h-6 w-6 text-blue-500" />}
+                text="aaa"
+              />
             </div>
           </div>
           {/* footer */}
