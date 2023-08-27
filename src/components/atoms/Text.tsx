@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { twMerge } from "tailwind-merge";
 
 type TextVariant = "h1" | "h2" | "h3" | "h4";
@@ -26,6 +28,6 @@ export const Text = <E extends React.ElementType = "p">({
   as,
 }: TextProps<E>) => {
   const Component = as ?? "p";
-  const classNameMerge = twMerge(className, textVariant[variant]);
+  const classNameMerge = twMerge(className , textVariant[variant]);
   return <Component className={classNameMerge}>{children}</Component>;
 };
