@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React from "react";
 import { Dropdown } from "flowbite-react";
 import type { CustomFlowbiteTheme } from "flowbite-react";
