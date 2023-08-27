@@ -1,1 +1,1 @@
-export { TextNav } from "./TextNav";
+export { ParkingSlotCard } from "./ParkingSlotCard";
