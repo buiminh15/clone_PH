@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { twMerge } from "tailwind-merge";
 
 type TextVariant = "h1" | "h2" | "h3" | "h4";
