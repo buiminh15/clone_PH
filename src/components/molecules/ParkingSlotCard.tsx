@@ -4,13 +4,16 @@ import { Text } from "../atoms/Text";
 import { TextWithLeftIcon } from "../atoms/TextWithLeftIcon";
 import { BeakerIcon } from "@heroicons/react/24/solid";
 import { Button } from "../atoms/Button";
+import { getBase64 } from "~/utils";
+
+const IMAGE_URL = "https://picsum.photos/id/237/100/100"
 
 export const ParkingSlotCard = () => {
   return (
     <div className="grid grid-rows-[100px_26px] overflow-hidden rounded bg-white shadow hover:shadow-2xl">
       <div className="grid grid-cols-[100px_1fr] gap-4 border-b">
         <Image
-          src={"https://picsum.photos/id/237/100/100"}
+          src={IMAGE_URL}
           width={100}
           height={100}
           alt=""
